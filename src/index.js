@@ -6,25 +6,26 @@ import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 // import * as serviceWorker from './serviceWorker';
 import App from './App';
+import routineReducer from './reducers/routineReducer'
 
 // compose == chain middleware functions
-let reducer = ''
+// let reducer = ''
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const enhancer = compose()
+// const enhancer = compose()
 
-let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(routineReducer, composeEnhancers(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
-  <Provide store={store}>
+  <Provider store={store}>
   {/* <React.StrictMode> */}
   {/* <Router> */}
     <App />
   {/* </React.StrictMode> */}
   {/* </Router> */}
-  </Provide>
+  </Provider>
   ,
   document.getElementById('root')
 );
