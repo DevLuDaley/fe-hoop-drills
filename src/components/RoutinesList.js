@@ -1,16 +1,19 @@
 import React, { Fragment } from 'react'
-import Routine from '../components/Routine'
+import {Link} from 'react-router-dom';
+// import Routine from '../components/Routine'
+
 
 const RoutinesList = (props)  => {
         return (
         <Fragment>
-            {/* RoutinesList */}
-            <ul style={{listStyleType: 'none'}}>
             {props.routines.map(routine => 
-                    <Routine routine={routine} />
-                
-            )}
-            </ul>
+            <ul style={{listStyleType: 'none'}} key={routine.id}>
+                  <li key={routine.id}>
+                      <Link to={`/routines/${routine.id}`}>{routine.routine_name}</Link> 
+                  </li> 
+                  </ul> 
+            )
+            }
         </Fragment>  
         );
 }
