@@ -14,8 +14,6 @@ class RoutinesContainer extends Component {
     render() { 
         return ( 
         <Fragment>
-            RoutinesContainer
-            <br></br>
             <br></br>
             <NewRoutineForm/>
             <br></br>
