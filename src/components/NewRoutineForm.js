@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import {addRoutine} from '../actions/addRoutine'
+// import DrillsContainer from '../containers/DrillsContainer'
 
 class NewRoutineForm extends Component {
     // state = {routine_name: '' }
@@ -39,7 +40,8 @@ class NewRoutineForm extends Component {
             <label> Routine Name:</label> 
             <input type="text" placeholder='enter new routine...' value={this.state.routine_name} name="routine_name" onChange={this.handleChange}/>
             <button type="submit">Add Routine</button>
-            </form>        
+            </form>  
+            {/* <DrillsContainer/>       */}
         </Fragment>  
         );
     }
