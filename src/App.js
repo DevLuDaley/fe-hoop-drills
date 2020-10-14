@@ -3,7 +3,8 @@ import './App.css';
 // import {connect} from 'react-redux'
 // import {fetchRoutines} from './actions/fetchRoutines'
 import RoutinesContainer from './containers/RoutinesContainer'
-import DrillsContainer from './containers/DrillsContainer'
+// import DrillsContainer from './containers/DrillsContainer'
+
 
 class App extends Component {
   // state = {  }
