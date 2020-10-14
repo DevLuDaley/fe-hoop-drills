@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
-class DrillsList extends Component {
-    state = {  }
-    render() { 
+const DrillsList = () => {
         return ( 
         <div>
         DrillsList
         </div> );
-    }
 }
  
 export default DrillsList;
