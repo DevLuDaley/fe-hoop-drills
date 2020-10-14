@@ -4,6 +4,7 @@ import './App.css';
 // import {fetchRoutines} from './actions/fetchRoutines'
 import RoutinesContainer from './containers/RoutinesContainer'
 // import DrillsContainer from './containers/DrillsContainer'
+import Navbar from './components/Navbar'
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ componentDidMount() {
     return (
       <Fragment>
         <div className="App">
+        <Navbar/>
         <RoutinesContainer/>
         {/* <br/> */}
         {/* <DrillsContainer/> */}
