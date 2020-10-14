@@ -24,10 +24,11 @@ class NewRoutineForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         this.props.addRoutine(this.state)
-        // this.setState({
-        //     name: ''
-        // })
-        // e.target.reset()
+        e.target.children['routine_name'].value = ''
+        // e.target.value
+        // console.log('NewRoutineForm -> handleSubmit -> e.target.value', e.target.value);
+        // console.log('NewRoutineForm -> handleSubmit -> e.target.children[1]', e.target.children['routine_name'].value);
+        // // e.target.reset()
     }
         
     render() {
