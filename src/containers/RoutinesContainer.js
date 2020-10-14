@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux'
-
+import {Route} from 'react-router-dom'
 import {fetchRoutines} from '../actions/fetchRoutines'
 import NewRoutineForm from '../components/NewRoutineForm'
 import RoutinesList from '../components/RoutinesList'
@@ -15,9 +15,12 @@ class RoutinesContainer extends Component {
         return ( 
         <Fragment>
             <br></br>
-            <NewRoutineForm/>
+            <Route path='/routine/new' component={NewRoutineForm}/>
+            {/* <NewRoutineForm/> */}
             <br></br>
-            <RoutinesList routines={this.props.routines}/>
+            <Route path='/routines' render={
+                () => <RoutinesList routines={this.props.routines}
+             /> } />
         </Fragment> );
     }
 }
