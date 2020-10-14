@@ -4,9 +4,10 @@ import './index.css';
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-// import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import routineReducer from './reducers/routineReducer'
+
 
 // compose == chain middleware functions
 // let reducer = ''
@@ -21,10 +22,10 @@ let store = createStore(routineReducer, composeEnhancers(applyMiddleware(thunk))
 ReactDOM.render(
   <Provider store={store}>
   {/* <React.StrictMode> */}
-  {/* <Router> */}
+  <Router>
     <App />
   {/* </React.StrictMode> */}
-  {/* </Router> */}
+  </Router>
   </Provider>
   ,
   document.getElementById('root')
