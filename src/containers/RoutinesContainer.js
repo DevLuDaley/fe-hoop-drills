@@ -15,7 +15,6 @@ class RoutinesContainer extends Component {
     render() { 
         return ( 
         <Fragment>
-            <br></br>
             <Switch>
 
             <Route path='/routines/new' component={NewRoutineForm}/>
