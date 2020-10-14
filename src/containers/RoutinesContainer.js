@@ -19,7 +19,7 @@ class RoutinesContainer extends Component {
             <Switch>
 
             <Route path='/routines/new' component={NewRoutineForm}/>
-            <Route path='/routines/:id' render={
+            <Route exact path='/routines/:id' render={
                 (routerProps) => <Routine {...routerProps} routines={this.props.routines}/>}/>
             <Route exact path='/routines' render={
                 (routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}
