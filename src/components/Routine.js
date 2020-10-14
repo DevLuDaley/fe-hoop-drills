@@ -1,5 +1,6 @@
 import React, { Fragment} from 'react'
 import {Redirect} from 'react-router-dom'
+import NewRoutineDrillForm from '../components/NewRoutineDrillForm'
 
 const Routine = (props) => {
     // console.log('props here =>',props.routine.id);
@@ -7,12 +8,7 @@ const Routine = (props) => {
     let routine = props.routines[props.match.params.id -1]
     // console.log(routine);
     // console.log(routine)
-    let handleChange = (e)=> {
-        console.log(e);
-    }
-    let handleSubmit = (e)=> {
-    console.log(e);
-    }
+    
 
 
     return( 
@@ -24,17 +20,11 @@ const Routine = (props) => {
             {routine ? routine.routine_name : null}
             </h1>
             {/* console.log(routine) */}
-            {routine ? routine.drills.map(drill => <h5>{drill.drill_name}</h5>) : null
+            {routine ? routine.drills.map(drill => <h5 key={drill.id}>{drill.drill_name}</h5>) : null
             }
         </li>
         
-        Add a Drill to this Routine
-        <form onSubmit={handleSubmit}>
-                <label>Drill Name:</label> 
-                <input type="text" placeholder='enter new drill...' value={props.drill_name} name="drill_name" onChange={handleChange}/>
-                <button type="submit">Add Drill</button>
-        </form> 
-                
+   <NewRoutineDrillForm id={props.routines[props.match.params.id -1]}/>
     </Fragment>
 
     )
