@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+// import {addRoutineDrill} from '../actions/addRoutineDrill' 
 
-const DrillsList = () => {
-        return ( 
-        <div>
-        DrillsList
-        </div> );
+class DrillList extends Component {
+    state = {  }
+    
+    render() { 
+        return (<div></div>);
+    }
 }
  
-export default DrillsList;
+export default DrillList;
