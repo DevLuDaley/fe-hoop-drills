@@ -6,8 +6,9 @@ import {Link} from 'react-router-dom';
 const RoutinesList = (props)  => {
         return (
         <Fragment>
-            {props.routines.map(routine => 
-            <ul style={{listStyleType: 'none'}} key={routine.id}>
+                    {/* {props.routine && props.routines.map(routine =>  */}
+            {props.routines && props.routines.map(routine => 
+            <ul className='routines-list' key={routine.id}>
                   <li key={routine.id}>
                       <Link to={`/routines/${routine.id}`}>{routine.routine_name}</Link> 
                   </li> 
