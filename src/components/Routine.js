@@ -7,15 +7,12 @@ const Routine = (props) => {
     let routine = props.routines[props.match.params.id -1]
     // console.log(routine);
     // console.log(routine)
-    handleChange = ()=> {
-        
+    let handleChange = (e)=> {
+        console.log(e);
     }
-    handleSubmit = ()=> {
-
+    let handleSubmit = (e)=> {
+    console.log(e);
     }
-handleChange = (params) => {
-    
-}
 
 
     return( 
@@ -32,9 +29,9 @@ handleChange = (params) => {
         </li>
         
         Add a Drill to this Routine
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={handleSubmit}>
                 <label>Drill Name:</label> 
-                <input type="text" placeholder='enter new drill...' value={this.state.drill_name} name="drill_name" onChange={this.handleChange}/>
+                <input type="text" placeholder='enter new drill...' value={props.drill_name} name="drill_name" onChange={handleChange}/>
                 <button type="submit">Add Drill</button>
         </form> 
                 
