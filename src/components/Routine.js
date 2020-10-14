@@ -13,13 +13,13 @@ const Routine = (props) => {
 
     return( 
     <Fragment>
-        <li key={props.routine} style={{listStyleType: 'none'}}>
+        <li className='routine-li' key={props.routine} style={{listStyleType: 'none'}}>
         {routine ? null : <Redirect to='/routines'/>}
 
             <h1>
             {routine ? routine.routine_name : null}
             </h1>
-            {/* console.log(routine) */}
+            <h3 className='drills-list'>Drills List</h3>
             {routine ? routine.drills.map(drill => <h5 key={drill.id}>{drill.drill_name}</h5>) : null
             }
         </li>
