@@ -1,8 +1,8 @@
 export const addRoutineDrill = (data) => {
     // debugger
-    console.log('addDrillRoutine - line 3 - data =>', data)
+    console.log('addRoutineDrill - line 3 - data =>', data)
     // ! return dispatch so that we have access to dispatch function, thanks to thunk.
-    // ! thunk is allowing us to pass in dispatch to the thunk function that we have inside of our action creator
+    // ! thunk is allowing us to pass in dispatch to the thunk function that we have inside of our action creator addRoutineDrill
 
     return(dispatch) => {
         fetch(`http://localhost:3000/api/v1/routines/${data.id}`, {
@@ -17,6 +17,10 @@ export const addRoutineDrill = (data) => {
         .then(routine => dispatch({
             type: 'ADD_ROUTINE_DRILL',
             payload: routine
-        }))
+                }
+            )
+        )
+        // console.log('addRoutineDrill -> data =>', data);
+        // console.log(routine);
     }
 };

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const RoutinesList = (props)  => {
         return (
-        <Fragment>
+        <div>
                     {/* {props.routine && props.routines.map(routine =>  */}
             {props.routines && props.routines.map(routine => 
             <ul className='routines-list' key={routine.id}>
@@ -15,7 +15,7 @@ const RoutinesList = (props)  => {
                   </ul> 
             )
             }
-        </Fragment>  
+        </div>  
         );
 }
  
