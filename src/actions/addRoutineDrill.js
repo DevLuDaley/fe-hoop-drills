@@ -1,6 +1,6 @@
 export const addRoutineDrill = (data) => {
     // debugger
-    console.log(data)
+    console.log('addDrillRoutine - line 3 - data =>', data)
     // ! return dispatch so that we have access to dispatch function, thanks to thunk.
     // ! thunk is allowing us to pass in dispatch to the thunk function that we have inside of our action creator
 

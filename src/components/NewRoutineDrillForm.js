@@ -9,7 +9,7 @@ class NewRoutineDrillForm extends Component {
         console.log(e.target);
          this.setState({
             [e.target.name]: e.target.value,
-            id: this.props.id['id']
+            id: this.props.routine['id']
             // [e.target.drill_name]: e.target.value,
             // [e.target.reps]: e.target.reps,
             // [e.target.sets]: e.target.sets
@@ -20,11 +20,15 @@ class NewRoutineDrillForm extends Component {
         e.preventDefault()
         // console.log(e);
         this.props.addRoutineDrill(this.state)
+         this.setState({
+            [e.target.name]: e.target.value,
+            id: this.props.routine['id']})
         // e.target.children['name'].value = ''
         // e.target.children['reps'].value = ''
         // e.target.children['sets'].value = ''
         // console.log(e.target);
         // console.log(this.props)
+        
     }
     render() { 
         return (  

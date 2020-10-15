@@ -5,7 +5,15 @@ export default function accountReducer(state = {routines: []}, action) {
             // return state
             return {routines: action.payload}
         case 'ADD_ROUTINE':
-            // console.log(state)
+            return {...state, routines:[...state.routines, action.payload]}
+        case 'ADD_ROUTINE_DRILL':
+            let routinesDrills =  state.routines.map(routine => {
+                if (routine.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return routine
+                }
+            })
             return {...state, routines:[...state.routines, action.payload]}
 
         default:
