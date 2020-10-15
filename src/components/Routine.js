@@ -5,7 +5,8 @@ import NewRoutineDrillForm from '../components/NewRoutineDrillForm'
 const Routine = (props) => {
     // console.log('props here =>',props.routine.id);
     // console.log(`props`, props.id);
-    let routine = props.routines[props.match.params.id -1]
+    // let routine = props.routines[props.match.params.id -1]
+    let routine = props.routines.filter(routine => routine.id == props.match.params.id)[0]
     // console.log(routine);
     // console.log(routine)
     
@@ -24,7 +25,9 @@ const Routine = (props) => {
             }
         </li>
         
-   <NewRoutineDrillForm id={props.routines[props.match.params.id -1]}/>
+   <NewRoutineDrillForm routine={routine} 
+//    id={props.routines[props.match.params.id -1]}
+   />
     </Fragment>
 
     )
