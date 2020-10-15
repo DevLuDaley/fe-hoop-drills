@@ -49,11 +49,8 @@ class NewRoutineForm extends Component {
                         <button type="submit">Add Routine</button>
             </form>  
             {/* <DrillsContainer/>       */}
-            1
             {/* <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/> */}
-            2
             {/* <RoutinesList/> */}
-            3
             {/* <RoutinesList props={this.props}/> */}
         </Fragment>  
         );
