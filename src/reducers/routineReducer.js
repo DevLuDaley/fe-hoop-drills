@@ -5,7 +5,25 @@
             // return state
             return {routines: action.payload}
         case 'ADD_ROUTINE':
-            return {...state, routines:[...state.routines, action.payload]}
+            let routineId = action.payload.id - 1
+            let newRoutine = state.routines[routineId]
+            // let newLoad =  state.routines.map(routine => {
+                // routine.id === action.payload.id //{
+                    // return newRoutine.payload
+                // } else {
+                    // debugger
+                    // return newRoutine
+                // }
+                // console.log('routineReducer -> routine', routine);
+            // }
+                // )
+
+                return {...state, routine: action.payload}
+                // return {...state, routines:[...state.routines, action.payload]}
+                // debugger
+// console.log(action.payload);
+
+
         case 'ADD_ROUTINE_DRILL':
             // let routineId = [action.payload.id -1]
             let routineDrills =  state.routines.map(routine => {
