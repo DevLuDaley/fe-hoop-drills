@@ -35,7 +35,7 @@ class RoutinesContainer extends Component {
 
 //! redux store
 const mapStateToProps = state => {
-    console.log('state.routines', state.routines);
+    // console.log('state.routines', state.routines);
     return(
         {
             routines: state.routines
