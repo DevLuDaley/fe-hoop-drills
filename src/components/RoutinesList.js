@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 const RoutinesList = (props)  => {
         return (
         <div>
-                    {/* {props.routine && props.routines.map(routine =>  */}
+        {console.log('RoutinesList -> props.routines', props.routines)}
             {props.routines && props.routines.map(routine => 
             <ul className='routines-list' key={routine.id}>
                   <li key={routine.id}>
