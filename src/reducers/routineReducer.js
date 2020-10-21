@@ -19,7 +19,8 @@
             
             // console.log('routineReducer -> state.routines[8]', state.routines[8]);
             // ! add new routine to list of routines
-            state.routines.push(newRoutine)
+            // state.routines.concat(newRoutine)
+            // state.routines.push(newRoutine)
             // console.log('routineReducer -> state.routines[10]', state.routines[10]);
             
             // state.routines.push(action.payload)
@@ -36,7 +37,8 @@
             // }
                 // )
 
-                return {...state.routines, routines: state.routines}
+                // return {...state.routines, routines: state.routines}
+                return {...state.routines, routines: state.routines.concat(newRoutine)}
                 // return {...state, routines: action.payload}
                 // return {...state, routines:[...state.routines, action.payload]}
                 // debugger
