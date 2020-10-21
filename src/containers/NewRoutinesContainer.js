@@ -8,8 +8,9 @@ import RoutinesList from '../components/RoutinesList'
 class NewRoutinesContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
         // add state
+        console.log(`these are props`, this.props);
     }
     render() { 
         return (
