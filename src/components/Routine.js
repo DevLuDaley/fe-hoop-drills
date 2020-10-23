@@ -20,8 +20,14 @@ const Routine = (props) => {
             {/* {routine.routine_name} */}
             {routine ? routine.routine_name : null}
             </h1>
-            <h3 className='drills-list'>Drills List</h3>
-            {routine ? routine.drills.map(drill => <h5 key={drill.id}>{drill.drill_name}</h5>) : null
+            
+            <h3 className='drills-list'>Drills List
+            <button>
+                {routine.drills.length}
+            </button> 
+            </h3>
+            
+            {routine ? routine.drills.map(drill => <h5 key={drill.id}>{drill.drill_name} Sets: {drill.sets} Reps: {drill.reps}      </h5>) : null
             }
         </li>
         
