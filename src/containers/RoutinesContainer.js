@@ -6,6 +6,7 @@ import {fetchRoutines} from '../actions/fetchRoutines'
 import NewRoutineForm from '../components/NewRoutineForm'
 import Routine from '../components/Routine'
 import RoutinesList from '../components/RoutinesList'
+import Home from '../components/Home'
 import NewRoutinesContainer from '../containers/NewRoutinesContainer'
 //'.components/NewRoutineForm'
 
@@ -18,8 +19,10 @@ class RoutinesContainer extends Component {
         return ( 
         <Fragment>
 
-            <Switch>\
-            <Route exact path='/routines/new' render={(routerProps) => <NewRoutinesContainer {...routerProps} routines={this.props.routines}/>}/>
+            <Switch>
+            <Route path='/home' component={Home}/>
+            <Route exact path='/routines/new' render={(routerProps) => <NewRoutinesContainer 
+            {...routerProps} routines={this.props.routines}/>}/>
             {/* <Route exact path='/routines/new' component={NewRoutinesContainer}/> */}
             {/* <Route exact path='/routines/new' component={NewRoutineForm}/> */}
             {/* <Route path='/routines/new' render={props => 
