@@ -8,7 +8,7 @@ const RoutinesList = (props)  => {
         <div>
         {/* {console.log('RoutinesList -> props.routines', props.routines)} */}
             {props.routines && props.routines.map(routine => 
-            <ul className='routines-list' key={routine.id}>
+            <ul className='routines-list'>
                   <li key={routine.id}>
                       <Link to={`/routines/${routine.id}`}> 
                             {routine.routine_name} 
@@ -17,10 +17,10 @@ const RoutinesList = (props)  => {
                             </button> 
                       </Link> 
                   </li> 
-                  </ul> 
+                  </ul>
             )
             }
-        </div>  
+        </div>
         );
 }
  
