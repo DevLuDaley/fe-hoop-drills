@@ -1,12 +1,11 @@
 .App {
   text-align: center;
+  /* background-color: #333; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+background-color: #333;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +13,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -70,25 +69,74 @@ nav li {
   float: left;
 }
 
+nav li:hover {
+  background-color: #111;
+}
+
 ul {
   /* list-style-type: none; */
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 li {
   /* float: left; */
+  /* background: rgb(131, 47, 47); */
+  /* border-left: 1rem solid #8a8a8a;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.125rem 0.25rem */
 }
 
 .routines-list a {
-  display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  /* display: block; */
+  /* display: grid; */
+  /* text-align: center; */
+  /* padding: 14px 16px ; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* border: 2000px; */
+  /* border-collapse: separate;
+  border-spacing: 15px 50px; */
   /* float: left; */
+    /* border-left: 1rem solid #8a8a8a; */
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 0.125rem 0.125rem 0.25rem */
+  /* border-style: solid; */
+}
+
+.routine-name{
+color: green;
+}
+
+.routines-list {
+  /* display: grid; */
+  display: block;
+  border-style: solid;
+   list-style-type: none;
+   text-align: center;
+  color: white;
+  /* text-align: center; */
+  padding: 14px 16px ;
+  /* border: 2000px; */
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15em;
+  padding-right: 15em;
+  /* border-collapse: separate; */
+  /* border-spacing: 15px 50px; */
+  /* text-decoration: none; */
+  /* column-count: 4; */
+  /* column-gap: 40px; */
+
+  /* float: left; */
+    /* border-left: 1rem solid #8a8a8a; */
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 0.125rem 0.125rem 0.25rem */
 }
 
 /* Change the link color to #111 (black) on hover */
