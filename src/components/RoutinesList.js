@@ -1,26 +1,26 @@
 import React, { Fragment } from 'react'
 import {Link} from 'react-router-dom';
-// import Routine from '../components/Routine'
+import Routine from '../components/Routine'
 
 
 const RoutinesList = (props)  => {
         return (
-        <div>
-        {/* {console.log('RoutinesList -> props.routines', props.routines)} */}
+        <Fragment>
+        {console.log('RoutinesList -> props.routines', props.routines)}
             {props.routines && props.routines.map(routine => 
             <ul className='routines-list'>
                   <li key={routine.id}>
                       <Link to={`/routines/${routine.id}`}> 
                             {routine.routine_name} 
                             <button>
-                                {routine.drills.length}
+                                {routine.drills ? routine.drills.length : null}
                             </button> 
                       </Link> 
                   </li> 
-                  </ul>
+            </ul>
             )
             }
-        </div>
+        </Fragment>
         );
 }
  
