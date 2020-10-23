@@ -6,11 +6,16 @@ import {Link} from 'react-router-dom';
 const RoutinesList = (props)  => {
         return (
         <div>
-        {console.log('RoutinesList -> props.routines', props.routines)}
+        {/* {console.log('RoutinesList -> props.routines', props.routines)} */}
             {props.routines && props.routines.map(routine => 
             <ul className='routines-list' key={routine.id}>
                   <li key={routine.id}>
-                      <Link to={`/routines/${routine.id}`}>{routine.routine_name}</Link> 
+                      <Link to={`/routines/${routine.id}`}> 
+                            {routine.routine_name} 
+                            <button>
+                                {routine.drills.length}
+                            </button> 
+                      </Link> 
                   </li> 
                   </ul> 
             )
