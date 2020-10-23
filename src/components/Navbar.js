@@ -12,16 +12,16 @@ var Navbar = () => {
 //     render() { 
         return (
             <Fragment>
-                <nav className='nav'>
-                    <ul style={{listStyleType: 'none'}}>
-                        <Switch>
-                            <Link to={`/home`}> <li> Home </li> </Link> 
-                            <Link to={`/routines`}> <li> Routines </li> </Link> 
-                            <Link to={`/routines/new`}> <li> New Routine </li> </Link> 
-                        </Switch>
-                    </ul>
-                </nav>
-            </Fragment>
+            <Switch>
+            <nav className='nav'>
+                <ul style={{listStyleType: 'none'}}>
+                    <Link to={`/home`}> <li> Home </li> </Link> 
+                    <Link to={`/routines`}> <li> Routines </li> </Link> 
+                    <Link to={`/routines/new`}> <li> New Routine </li> </Link> 
+                </ul>
+            </nav>
+            </Switch>
+        </Fragment>
           );
     // }
 }

@@ -8,7 +8,7 @@ const RoutinesList = (props)  => {
         <Fragment>
         {console.log('RoutinesList -> props.routines', props.routines)}
             {props.routines && props.routines.map(routine => 
-            <ul className='routines-list'>
+            <ul key={routine.id} className='routines-list'>
                   <li key={routine.id}>
                       <Link to={`/routines/${routine.id}`}> 
                             {routine.routine_name} 
