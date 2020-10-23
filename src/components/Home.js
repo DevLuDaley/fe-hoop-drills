@@ -10,10 +10,12 @@ const Home = () => {
 <Fragment>
     
 <h1> Welcome to Hoop Drills </h1>
+ 
  <Link to={'/routines'}><button>View Routines</button>
  </Link>
  <Link to={'/routines/new'}><button>New Routine</button>
  </Link>
+
 </Fragment>
 )
     }
