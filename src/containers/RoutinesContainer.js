@@ -21,12 +21,13 @@ class RoutinesContainer extends Component {
             <Switch>
             <Route path='/home' component={Home}/>
 
+            <Route exact path='/routines/:id' render={(routerProps) => <Routine {...routerProps} routines={this.props.routines}/>}/>
+            
             <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/>
 
             <Route exact path='/routines/new' render={(routerProps) => <NewRoutinesContainer 
             {...routerProps} routines={this.props.routines}/>}/>
             
-            <Route exact path='/routines/:id' render={(routerProps) => <Routine {...routerProps} routines={this.props.routines}/>}/>
             
             </Switch>
         </Fragment> );

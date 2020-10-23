@@ -6,13 +6,14 @@ const Routine = (props) => {
     // console.log('props here =>',props.routine.id);
     // console.log(`props`, props.id);
     // let routine = props.routines[props.match.params.id -1]
-    let routine = props.routines.filter(routine => routine.id == props.match.params.id)[0]
-    // console.log('Routine -> routine', routine);
-    // console.log(routine);
-    // console.log('ROUTINE => ', routine)
+    if (props.routines) {
 
+        var routine = props.routines.filter(routine => routine.id == props.match.params.id)[0]
+    }
+
+    // console.log(`CONSOLED PROPS from ROUTINE.JS`, props.routines);
     return( 
-    <Fragment>
+        <Fragment>
         <li className='routine-li' key={props.routine} style={{listStyleType: 'none'}}>
         {/* {routine ? null : <Redirect to='/routines'/>} */}
 
@@ -22,9 +23,9 @@ const Routine = (props) => {
             </h1>
             
             <h3 className='drills-list'>Drills List
-            <button>
-                {routine.drills.length}
-            </button> 
+            {/* <button>
+                {routine.drills ? routine.drills.length : null}
+            </button> */}
             </h3>
             
             {routine ? routine.drills.map(drill => <h5 key={drill.id}>{drill.drill_name} Sets: {drill.sets} Reps: {drill.reps}      </h5>) : null
