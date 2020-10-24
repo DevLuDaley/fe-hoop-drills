@@ -115,6 +115,7 @@ color: green;
 .routines-list {
   /* display: grid; */
   display: block;
+  margin: 1em 0 1em 0;
   border-style: solid;
    list-style-type: none;
    text-align: center;
