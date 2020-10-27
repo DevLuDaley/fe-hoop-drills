@@ -4,8 +4,10 @@
 }
 
 body {
-background-color: #333;
+background-color:#364f6b;
+/* background-color: #333; */
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -49,7 +51,7 @@ background-color: #333;
 }
 
 nav a {
-  color: white;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -58,7 +60,8 @@ nav li {
   list-style-type: none;
   /* background-color: rgb(78, 75, 75); */
   display: block;
-  color: white;
+  /* color: white; */
+  color:#f0f0f0;
   /* text-align: center; */
   padding: 14px 16px;
   /* text-decoration: none; */
@@ -89,6 +92,39 @@ li {
   box-shadow: 0.125rem 0.125rem 0.25rem */
 }
 
+
+.routines-list {
+  display: grid;
+  /* display: block; */
+  margin: 1em 0 1em 0;
+  border-style: solid;
+  list-style-type: none;
+  /* text-align: center; */
+  /* color: white; */
+  /* text-align: center; */
+  padding: 14px 16px ;
+  /* border: 2000px; */
+  /* display: block; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* padding-left: 15em;
+  padding-right: 15em; */
+  /* border-collapse: separate; */
+  /* border-spacing: 15px 50px; */
+  /* text-decoration: none; */
+  /* column-count: 3; */
+  /* row-count: 3; */
+  /* column-gap: 40px; */
+
+  float: left;
+  width: 35%
+    /* border-left: 1rem solid #8a8a8a; */
+  /* border-radius: 0.5rem; */
+  /* box-shadow: 0.125rem 0.125rem 0.25rem */
+}
+
+
+
 .routines-list a {
   color: white;
   text-decoration: none;
@@ -108,37 +144,38 @@ li {
   /* border-style: solid; */
 }
 
-.routine-name{
-color: green;
+.btn {
+  /* color: red; */
+  /* background: yellow; */
+  /* background: blue; */
 }
 
-.routines-list {
-  /* display: grid; */
-  display: block;
-  margin: 1em 0 1em 0;
-  border-style: solid;
-   list-style-type: none;
-   text-align: center;
-  color: white;
-  /* text-align: center; */
-  padding: 14px 16px ;
-  /* border: 2000px; */
-  /* display: block; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15em;
-  padding-right: 15em;
-  /* border-collapse: separate; */
-  /* border-spacing: 15px 50px; */
-  /* text-decoration: none; */
-  /* column-count: 4; */
-  /* column-gap: 40px; */
+.drills-count {
+  background: rgb(31, 31, 134);
+  /* color: red; */
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.125rem 0.25rem;
 
-  /* float: left; */
-    /* border-left: 1rem solid #8a8a8a; */
+  width: 30%;
+}
+.btn-delete {
+  /* background: black; */
+  background: rgb(138, 31, 31);
+  /* background: rgb(138, 31, 31); */
+    border-radius: 0.5rem;
+    width: 28%;
+  /* box-shadow: 0.125rem 0.125rem 0.25rem */
+}
+
+.routine-name{
+/* color: blue; */
+/* color: black; */
+/* background: blue; */
+background: rgb(43, 94, 189);;
   /* border-radius: 0.5rem; */
   /* box-shadow: 0.125rem 0.125rem 0.25rem */
 }
+
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
