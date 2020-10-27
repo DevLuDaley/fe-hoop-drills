@@ -49,10 +49,10 @@ class NewRoutineDrillForm extends Component {
               <input type="hidden" placeholder='' value={this.state.id} name="id" onChange={this.handleChange}/>
             <label>Name:</label> 
               <input type="text" placeholder='enter new drill...' value={this.state.drill_name} name="drill_name" onChange={this.handleChange}/>
-            <label>Reps:</label> 
-              <input type="text" placeholder='enter reps...' value={this.state.reps} name="reps" onChange={this.handleChange}/>
             <label> Sets:</label> 
               <input type="text" placeholder='enter sets...' value={this.state.sets} name="sets" onChange={this.handleChange}/>
+            <label>Reps:</label> 
+              <input type="text" placeholder='enter reps...' value={this.state.reps} name="reps" onChange={this.handleChange}/>
                 <button type="submit">Add Drill</button>
         </form>
         </div>

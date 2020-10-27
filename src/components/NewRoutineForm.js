@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
-import {Route, Switch} from 'react-router-dom'
+// import {Route, Switch} from 'react-router-dom'
 
 import {addRoutine} from '../actions/addRoutine'
-import RoutinesList from '../components/RoutinesList'
+// import RoutinesList from '../components/RoutinesList'
 
 
 class NewRoutineForm extends Component {
@@ -40,7 +40,7 @@ class NewRoutineForm extends Component {
     render() {
         return (
         <Fragment>
-        <RoutinesList/>
+        {/* <RoutinesList/> */}
 
             {/* NewRoutineForm */}
             <form id='new-routine-form' onSubmit={this.handleSubmit}>
