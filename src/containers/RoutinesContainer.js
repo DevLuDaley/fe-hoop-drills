@@ -26,10 +26,7 @@ class RoutinesContainer extends Component {
 
             <Route exact path='/routines/new' render={(routerProps) => <NewRoutinesContainer {...routerProps} routines={this.props.routines} delete={this.props.delete}/>}/>
             
-            <Route exact path='/routines/:id' render={(routerProps) => <RoutineShowContainer {...routerProps} 
-            // routines={this.props.routines}
-
-            />}/>
+            <Route exact path='/routines/:id' render={(routerProps) => <RoutineShowContainer {...routerProps}/>}/> 
 
             {/* <Route exact path='/routines/:id' render={(routerProps) => <Routine {...routerProps} routines={this.props.routines}/>}/> */}
             

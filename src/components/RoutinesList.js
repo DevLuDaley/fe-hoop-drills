@@ -41,8 +41,9 @@ routine, id) =>
         <div key={`div-${routine.id}`}>
             <ul key={`ul-${routine.id}`} className='routines-list'>
                <li key={`li-${routine.id}`}>
-                  <Link className="routine-name" to={`/routines/${routine.id}`}> 
-                        {routine.routine_name} 
+                  <Link key={`link-id-${routine.id}`} className="routine-name" to={`/routines/${routine.id}`}> 
+                        {routine.routine_name} -
+                        routine.id = {routine.id} && id ={id} 
                         {/* {console.log('RoutinesList -> render -> routine.id', routine.id)}  */}
                         {/* {console.log('RoutinesList -> render -> id', id)}  */}
 
@@ -51,7 +52,7 @@ routine, id) =>
                       {routine.drills ? routine.drills.length : null}
                   </p>  
                   <button
-                    key={id} className='btn-delete'
+                    key={routine.id} className='btn-delete'
                     id={'btn-delete-routine-' + routine.id}
                     onClick={() => this.props.deleteRoutine(routine.id)}>
                              Delete

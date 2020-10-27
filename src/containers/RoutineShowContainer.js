@@ -24,7 +24,16 @@ class RoutineShowContainer extends Component {
     render() {
        if (this.props.routines) {
         let urlId = window.location.href.replace('http://localhost:3001/routines/','')
-        let currentRoutine = this.props.routines[(urlId -1)]
+        let currentRoutine = this.props.routines.filter(clickedRoutine  => 
+         {
+
+             if (clickedRoutine.id === urlId) {
+                 return clickedRoutine
+            } else {
+                
+            }
+        }    
+            )
         console.log('RoutineDrillsList -> currentRoutineId', currentRoutine);
 
         // currentRoutine.routine-name
