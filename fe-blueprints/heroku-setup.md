@@ -21,4 +21,26 @@ git push heroku main
 ```zsh
 git rm yarn.lock
 ```
+
+```zsh
+brew uninstall --force yarn
+
+did not use 
+        =>>> npm uninstall -g yarn
+
+yarn -v
+zsh: command not found: yarn
+
+which yarn
+yarn not found
+```
+
+just in case
+```
+rm -rf /usr/local/bin/yarn
+rm -rf /usr/local/bin/yarnpkg
+
+which yarn
+```
+
 <!-- git remote add heroku git@heroku.com:hoop-drills-react.git -->
