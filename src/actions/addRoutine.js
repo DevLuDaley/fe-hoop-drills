@@ -4,7 +4,7 @@ export const addRoutine = (data) => {
 // ! thunk is allowing us to pass in dispatch to the thunk function that we have inside of our action creator
 
     return(dispatch) => {
-fetch('https://hoop-drills--fix-deleteherokuapp.com/api/v1/routines', {
+fetch('https://be-hoop-drills.herokuapp.com/api/v1/routines', {
     headers: {
         'Content-Type' : 'application/json',
         'Accept' : 'application/json'
