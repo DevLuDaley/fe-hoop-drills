@@ -61,3 +61,10 @@ which yarn
 ```
 
 <!-- git remote add heroku git@heroku.com:hoop-drills-react.git -->
+
+
+git push heroku fix-delete-fix-router:main
+
+npm i && heroku open
+
+heroku logs --tail
