@@ -1,7 +1,10 @@
 
 ```ZSH
-   fix-delete-fix-router ● ↑4 ⍟2  
- $ heroku create fe-hoop-drills --buildpack https://github/mars/create-react-app-buildpack.git
+ heroku create fe-hoop-drills --buildpack https://github/mars/create-react-app-buildpack.git
+
+
+heroku create fe-hoop-drills --buildpack mars/create-react-app
+
 ```
 
 ```zsh
@@ -22,6 +25,8 @@ https://fe-hoop-drills.herokuapp.com/ | https://git.heroku.com/fe-hoop-drills.gi
 
 ```zsh
 git add .
+
+git commit -m 'first commit'
 
 git push heroku
 #push without build
