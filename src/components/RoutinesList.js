@@ -36,10 +36,10 @@ class RoutinesList extends Component {
 let routinesList = this.props.routines
         return (
         <Fragment>
+        <div key={`div-1`}>
+            <ul key={`ul-1`} className='routines-list'>
             {routinesList && routinesList.map((
 routine, id) => 
-        <div key={`div-${routine.id}`}>
-            <ul key={`ul-${routine.id}`} className='routines-list'>
                <li key={`li-${routine.id}`}>
                   <Link key={`link-id-${routine.id}`} className="routine-name" to={`/routines/${routine.id}`}> 
                         {routine.routine_name} -
@@ -58,12 +58,12 @@ routine, id) =>
                              Delete
                   </button> 
                </li> 
-            </ul>
-        </div>
                   
 
               )
             }
+            </ul>
+        </div>
         </Fragment>
         );
 }
