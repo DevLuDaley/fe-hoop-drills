@@ -1,6 +1,47 @@
-
+# Backend
 ```ZSH
- heroku create fe-hoop-drills --buildpack https://github/mars/create-react-app-buildpack.git
+ heroku create be-hoop-drills 
+
+...
+Creating ⬢ be-hoop-drills... done
+https://be-hoop-drills.herokuapp.com/ | https://git.heroku.com/be-hoop-drills.git
+
+```
+
+
+```zsh
+ git remote -v
+```
+        heroku  https://git.heroku.com/hoop-drills--fix-delete.git (fetch)
+        heroku  https://git.heroku.com/hoop-drills--fix-delete.git (push)
+        origin  https://github.com/DevLuDaley/BE-hoop-drills.git (fetch)
+        origin  https://github.com/DevLuDaley/BE-hoop-drills.git (push)
+
+```
+git remote rm heroku
+git remote add heroku git@heroku.com:be-hoop-drills.git
+git remote add heroku git.heroku.com:be-hoop-drills.git
+
+```
+
+```zsh
+ git commit -m 'first heroku commit'
+
+...
+On branch fix-delete-fix-router
+Your branch is up to date with 'origin/fix-delete-fix-router'.
+
+nothing to commit, working tree clean
+
+```
+
+
+
+
+
+# Frontend
+```ZSH
+#  heroku create fe-hoop-drills --buildpack https://github/mars/create-react-app-buildpack.git
 
 
 heroku create fe-hoop-drills --buildpack mars/create-react-app
