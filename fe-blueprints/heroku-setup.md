@@ -35,6 +35,28 @@ nothing to commit, working tree clean
 
 ```
 
+PROCFILE
+web:bundle exec rails server -p 3000
+
+web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
+
+
+
+
+
+
+heroku ps
+heroku ps:scale web=1
+heroku logs --tail
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,6 +86,16 @@ https://fe-hoop-drills.herokuapp.com/ | https://git.heroku.com/fe-hoop-drills.gi
         origin  https://github.com/DevLuDaley/fe-hoop-drills.git (fetch)
         origin  https://github.com/DevLuDaley/fe-hoop-drills.git (push)
 
+
+```
+
+ git remote add heroku git@github.com:devludaley/be-hoop-drills.git
+git@github.com:USERNAME/REPOSITORY.git –
+
+```
+
+
+
 ```zsh
 git add .
 
@@ -74,6 +106,10 @@ git push heroku
 
 git push heroku main
 # push with build
+
+git push heroku $branch_name:main
+        i.e git push heroku fix-delete-fix-router:main
+
 ```
 
 ```zsh
