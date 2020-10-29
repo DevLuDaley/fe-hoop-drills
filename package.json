@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "PORT=3001 react-scripts start",
+    "heroku-start": "react-scripts index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
