@@ -14,7 +14,11 @@ https://fe-hoop-drills.herokuapp.com/ | https://git.heroku.com/fe-hoop-drills.gi
         origin  https://github.com/DevLuDaley/fe-hoop-drills.git (push)
 
 ```zsh
-git add . heroku main
+git add .
 git push heroku main
+```
+
+```zsh
+git rm yarn.lock
 ```
 <!-- git remote add heroku git@heroku.com:hoop-drills-react.git -->
