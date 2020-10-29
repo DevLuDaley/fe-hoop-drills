@@ -1,13 +1,20 @@
 
-``` heroku create hoop-drills-react```
+```ZSH
+   fix-delete-fix-router ● ↑4 ⍟2  
+ $ heroku create fe-hoop-drills --buildpack https://github/mars/create-react-app-buildpack.git
+```
 
 ```zsh
 Creating ⬢ fe-hoop-drills... done
+Setting buildpack to https://github/mars/create-react-app-buildpack.git... done
+
 https://fe-hoop-drills.herokuapp.com/ | https://git.heroku.com/fe-hoop-drills.git
 ```
+
 ```zsh
  git remote -v
 ```
+
         heroku  https://git.heroku.com/fe-hoop-drills.git (fetch)
         heroku  https://git.heroku.com/fe-hoop-drills.git (push)
         origin  https://github.com/DevLuDaley/fe-hoop-drills.git (fetch)
@@ -15,7 +22,12 @@ https://fe-hoop-drills.herokuapp.com/ | https://git.heroku.com/fe-hoop-drills.gi
 
 ```zsh
 git add .
+
+git push heroku
+#push without build
+
 git push heroku main
+# push with build
 ```
 
 ```zsh
