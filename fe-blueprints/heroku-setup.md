@@ -75,6 +75,11 @@ debugging
 heroku run rails s
 ```
 
+You can verify that the remote was added to your project by running:
+```
+git config --list --local | grep heroku
+```
+
 ```zsh
 Access to fetch at 
 'https://be-hoop-drills.herokuapp.com/api/v1/routines'
@@ -90,4 +95,19 @@ If an opaque response serves your needs, set the request's mode to 'no-cors' to 
 
 ```
 https://be-hoop-drills.herokuapp.com/api/v1/routines' from origin 'https://fe-hoop-drills.herokuapp.com'
+```
+
+
+```rb
+$ ruby-install --latest
+
+Then install the newest Ruby version.
+
+$ ruby-install --latest ruby
+ Save
+$ ruby-install --latest ruby
+
+Add a line to the .zshrc file to set the new Ruby version as a default.
+
+chruby ruby-2.7.0
 ```
