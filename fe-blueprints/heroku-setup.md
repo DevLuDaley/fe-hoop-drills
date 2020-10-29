@@ -68,3 +68,26 @@ git push heroku fix-delete-fix-router:main
 npm i && heroku open
 
 heroku logs --tail
+
+
+debugging
+```zsh
+heroku run rails s
+```
+
+```zsh
+Access to fetch at 
+'https://be-hoop-drills.herokuapp.com/api/v1/routines'
+https://be-hoop-drills.herokuapp.com/api/v1/routines
+ from origin 
+ 'https://fe-hoop-drills.herokuapp.com'
+  has been blocked by CORS policy: 
+  
+  No 'Access-Control-Allow-Origin' header is present on the requested resource. 
+
+If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+```
+
+```
+https://be-hoop-drills.herokuapp.com/api/v1/routines' from origin 'https://fe-hoop-drills.herokuapp.com'
+```
