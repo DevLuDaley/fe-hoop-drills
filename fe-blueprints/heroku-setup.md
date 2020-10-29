@@ -38,12 +38,12 @@ nothing to commit, working tree clean
 PROCFILE
 web:bundle exec rails server -p 3000
 
-web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
+web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}**
+**
 
 
 
-
-
+****
 
 heroku ps
 heroku ps:scale web=1
@@ -188,3 +188,11 @@ Add a line to the .zshrc file to set the new Ruby version as a default.
 
 chruby ruby-2.7.0
 ```
+
+
+
+
+npm i cors-anywhere --save
+
+
+proxy.js
