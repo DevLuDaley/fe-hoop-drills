@@ -5,7 +5,8 @@ export const addRoutine = (data) => {
 // https://be-hoop-drills.herokuapp.com/api/v1/routines
 
     return(dispatch) => {
-fetch('https://cors-anywhere.herokuapp.com/https://hoop-drills.herokuapp.com/api/v1/routines', {
+// fetch('https://cors-anywhere.herokuapp.com/https://hoop-drills.herokuapp.com/api/v1/routines', {
+fetch('https://be-hoop-drills.herokuapp.com/api/v1/routines', { 
     headers: {
         'Content-Type' : 'application/json',
         'Accept' : 'application/json'

@@ -23,12 +23,12 @@ const RoutinesList = props => {
          return (
         <Fragment>
             <button key={99} onClick={() => setStateRoutines([...stateRoutines].sort(ascSort))}
-            >sort asc</button>   
+            >sort asc</button>
             <button key={98} onClick={() => setStateRoutines([...stateRoutines].sort(descSort))}
             >sort desc</button>
+
             <ul key={props.id} id='list-of-routines' className='routines-list'>
                 {
-                    
                   stateRoutines && stateRoutines.map(
                     routine => 
                         <li key={routine.id}>

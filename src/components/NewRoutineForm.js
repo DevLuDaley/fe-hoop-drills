@@ -40,18 +40,12 @@ class NewRoutineForm extends Component {
     render() {
         return (
         <Fragment>
-        <RoutinesList/>
-
-            {/* NewRoutineForm */}
             <form id='new-routine-form' onSubmit={this.handleSubmit}>
                 <label> Routine Name:</label> 
                     <input type="text" placeholder='enter new routine...' value={this.state.routine_name} name="routine_name" onChange={this.handleChange}/>
                         <button type="submit">Add Routine</button>
             </form>  
-            {/* <DrillsContainer/>       */}
-            {/* <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/> */}
-            {/* <RoutinesList/> */}
-            {/* <RoutinesList props={this.props}/> */}
+            <RoutinesList/>
         </Fragment>  
         );
     }
