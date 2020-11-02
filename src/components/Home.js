@@ -13,8 +13,8 @@ const Home = () => {
  
  <Link to={'/routines'}><button>View Routines</button>
  </Link>
- <Link to={'/routines/new'}><button>New Routine</button>
- </Link>
+ {/* <Link to={'/routines/new'}><button>New Routine</button>
+ </Link> */}
 
 </Fragment>
 )
