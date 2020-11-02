@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import {Link} from 'react-router-dom';
+import NewRoutineForm from './NewRoutineForm';
 // import Routine from '../components/Routine'
 
 
@@ -22,13 +23,19 @@ const RoutinesList = props => {
 
          return (
         <Fragment>
+        <h1>
+                Your Routines List
+                </h1>
+                <NewRoutineForm/>
+                <br></br>
             sort: <button key={99} className='routine-order-btns' onClick={() => setStateRoutines([...stateRoutines].sort(ascSort))}
             >asc</button>
             <button key={98} className='routine-order-btns' onClick={() => setStateRoutines([...stateRoutines].sort(descSort))}
             >desc</button>
 
             <ul key={props.id} id='list-of-routines' className='routines-list'>
-                {
+                
+                 {
                   stateRoutines && stateRoutines.map(
                     routine => 
                         <li key={routine.id}>

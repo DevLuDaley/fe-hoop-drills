@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import NewRoutineForm from '../components/NewRoutineForm'
+// import NewRoutineForm from '../components/NewRoutineForm'
 import RoutinesList from '../components/RoutinesList'
 import RoutinesOrderBtns from '../components/RoutinesOrderBtns'
 // import 
@@ -16,7 +16,7 @@ class RoutinesPageContainer extends Component {
     render() { 
         return (
             <Fragment>
-                <NewRoutineForm/>
+                {/* <NewRoutineForm/> */}
                 {/* <br></br> */}
                 <RoutinesList routines={this.props.routines}/>
                 {/* <RoutinesOrderBtns/> */}
