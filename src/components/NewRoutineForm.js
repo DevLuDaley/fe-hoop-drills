@@ -45,7 +45,6 @@ class NewRoutineForm extends Component {
                     <input type="text" placeholder='enter new routine...' value={this.state.routine_name} name="routine_name" onChange={this.handleChange}/>
                         <button type="submit">Add Routine</button>
             </form>  
-            <RoutinesList/>
         </Fragment>  
         );
     }

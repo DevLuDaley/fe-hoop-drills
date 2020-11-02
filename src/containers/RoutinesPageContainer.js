@@ -6,7 +6,7 @@ import RoutinesOrderBtns from '../components/RoutinesOrderBtns'
 // import 
 
 
-class NewRoutinesContainer extends Component {
+class RoutinesPageContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -17,7 +17,7 @@ class NewRoutinesContainer extends Component {
         return (
             <Fragment>
                 <NewRoutineForm/>
-                <br></br>
+                {/* <br></br> */}
                 <RoutinesList routines={this.props.routines}/>
                 {/* <RoutinesOrderBtns/> */}
             </Fragment>
@@ -25,4 +25,4 @@ class NewRoutinesContainer extends Component {
     }
 }
  
-export default NewRoutinesContainer;
+export default RoutinesPageContainer;

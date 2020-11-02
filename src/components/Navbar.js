@@ -17,7 +17,7 @@ var Navbar = () => {
                 <ul style={{listStyleType: 'none'}}>
                     <Link to={`/home`}> <li> Home </li> </Link> 
                     <Link to={`/routines`}> <li> Routines </li> </Link> 
-                    <Link to={`/routines/new`}> <li> New Routine </li> </Link> 
+                    <Link to={`/routines/new`}> <li> New Routine </li></Link> 
                 </ul>
             </nav>
             </Switch>

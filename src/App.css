@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+    background-color: #333;
+    color: white;
 }
 
 .App-logo {
@@ -22,6 +24,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#new-routine-form {
+    background-color: #333;
+    color: white;
+}
+
+.routine-order-btns {
+     background-color: #333;
+    color: white;
 }
 
 .App-link {
