@@ -20,7 +20,10 @@ class RoutinesContainer extends Component {
         return ( 
         <Fragment>
             <Switch>
-            <Route path='/home' component={Home}/>
+            <Route exact path='/' component={Home}/>
+
+            {/* <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/> */}
+            <Route exact path='/home' component={Home}/>
 
             {/* <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/> */}
 
