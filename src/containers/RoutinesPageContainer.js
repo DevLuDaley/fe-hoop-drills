@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
 
-import NewRoutineForm from '../components/NewRoutineForm'
+// import NewRoutineForm from '../components/NewRoutineForm'
 import RoutinesList from '../components/RoutinesList'
 import RoutinesOrderBtns from '../components/RoutinesOrderBtns'
 // import 
 
 
-class NewRoutinesContainer extends Component {
+class RoutinesPageContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -16,8 +16,8 @@ class NewRoutinesContainer extends Component {
     render() { 
         return (
             <Fragment>
-                <NewRoutineForm/>
-                <br></br>
+                {/* <NewRoutineForm/> */}
+                {/* <br></br> */}
                 <RoutinesList routines={this.props.routines}/>
                 {/* <RoutinesOrderBtns/> */}
             </Fragment>
@@ -25,4 +25,4 @@ class NewRoutinesContainer extends Component {
     }
 }
  
-export default NewRoutinesContainer;
+export default RoutinesPageContainer;

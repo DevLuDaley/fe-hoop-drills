@@ -8,6 +8,7 @@ import Routine from '../components/Routine'
 import RoutinesList from '../components/RoutinesList'
 import Home from '../components/Home'
 import NewRoutinesContainer from '../containers/NewRoutinesContainer'
+import RoutinesPageContainer from '../containers/RoutinesPageContainer'
 //'.components/NewRoutineForm'
 
 class RoutinesContainer extends Component {
@@ -19,11 +20,16 @@ class RoutinesContainer extends Component {
         return ( 
         <Fragment>
             <Switch>
-            <Route path='/home' component={Home}/>
+            <Route exact path='/' component={Home}/>
 
-            <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/>
+            {/* <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/> */}
+            <Route exact path='/home' component={Home}/>
 
-            <Route exact path='/routines/new' render={(routerProps) => <NewRoutinesContainer {...routerProps} routines={this.props.routines}/>}/>
+            {/* <Route exact path='/routines' render={(routerProps) => <RoutinesList {...routerProps} routines={this.props.routines}/>}/> */}
+
+            <Route exact path='/routines' render={(routerProps) => <RoutinesPageContainer {...routerProps} routines={this.props.routines}/>}/>
+
+            {/* <Route exact path='/routines/new' render={(routerProps) => <NewRoutinesContainer {...routerProps} routines={this.props.routines}/>}/> */}
             
             <Route exact path='/routines/:id' render={(routerProps) => <Routine {...routerProps} routines={this.props.routines}/>}/>
             
